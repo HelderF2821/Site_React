@@ -1,0 +1,82 @@
+.header {
+	background-color: #333;
+	color : #fff;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 22%;
+}
+
+.menu {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	position: fixed;
+	left: -250px;
+	top: 0;
+	transition: all 0.3s ease-in-out;
+	width: 250px;
+	z-index: 1;
+}
+
+.menu.show {
+	left: 0;
+}
+
+.menu-btn {
+	background-color: #333;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 20px 20px;
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+	width: 100px;
+}
+
+.menu-btn:focus {
+	outline: none;
+}
+  
+.menu-btn:hover {
+	background-color: #555;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	margin-top: 10px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+a:hover {
+	background-color: #fff;
+	color: #333;
+}
