@@ -3,22 +3,23 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Header from './Composants/Header';
 import React, { useState } from 'react';
+import TimeLine from './Pages/TimeLine';
 
 function App() {
-  const [menuOpen, setmenuOpen] = useState('');
+  const [menuOpen, setMenuOpen] = useState('');
 
-  const childToParent = (menuclass) => {
-    setmenuOpen(menuclass);
+  const childToParent = (menuClass) => {
+    setMenuOpen(menuClass);
   };
-
+  
   return (
     <>
       <Header childToParent={childToParent} />
       <div className={'App' + (menuOpen ? ' reduced' : '')}>
-        {/* <Routes>
+        <Routes>
           <Route path='/home' element={<Home/>}/>
-        </Routes> */}
-        <Home />    
+          <Route path='/TimeLine' element={<TimeLine/>}/>
+        </Routes>
       </div>
     </>
   );
