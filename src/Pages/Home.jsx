@@ -1,11 +1,12 @@
 import React from "react";
 
-function Home () {
+const Home = () => {
 
     return (
     <div className="Home">
-        <p className="test">Test t'as vu (Home)</p>
+        <p className="test">C'est la page principal ca (Home)</p>
     </div>
-)}
+    );
+};
 
 export default Home;    
